@@ -1,130 +1,145 @@
-{% load static i18n compress %}<!DOCTYPE html>
+{% load static i18n compress %}
+<!DOCTYPE html>
 
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
-		
-		<title>{% block title %}anillimaye{% endblock title %}</title>
 
-		<!-- Loading third party fonts -->
-		{% block css %}
-    
-		<!-- Latest compiled and minified Bootstrap CSS -->
-		<link href="http://fonts.googleapis.com/css?family=Roboto:300,400,700|" rel="stylesheet" type="text/css">
-				
-	
-		<!-- Your stuff: Third-party CSS libraries go here -->
-		{% compress css %}
-		<!-- This file stores project-specific CSS -->
-		<link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
 
-		<link rel="stylesheet" href="{% static 'css/style.css' %}">
-		
-		{% endcompress %}
-		{% endblock %}
-		
-		<!-- Loading main css file -->
-		
-		<!--[if lt IE 9]>
+	<title>{% block title %}anillimaye{% endblock title %}</title>
+
+	<!-- Loading third party fonts -->
+	{% block css %}
+
+	<!-- Latest compiled and minified Bootstrap CSS -->
+	<link href="http://fonts.googleapis.com/css?family=Roboto:300,400,700|" rel="stylesheet" type="text/css">
+
+
+	<!-- Your stuff: Third-party CSS libraries go here -->
+	{% compress css %}
+	<!-- This file stores project-specific CSS -->
+	<link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+	{% endcompress %}
+	{% endblock %}
+
+	<!-- Loading main css file -->
+
+	<!--[if lt IE 9]>
 		<script src="js/ie-support/html5.js"></script>
 		<script src="js/ie-support/respond.js"></script>
 		<![endif]-->
 
-	</head>
+</head>
 
 
-	<body>
-		
-		<div class="site-content">
-			{% block navbar %}
-			navbar
-		  {% endblock navbar %}
-		  {% block content %}
+<body>
 
-			<main class="main-content">
-				<p>Use this document as a way to quick start any new project.</p>
-		
-			</main> <!-- .main-content -->
-			{% endblock content %}
-			<footer class="site-footer">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-3">
-							<div class="widget">
-								<h3 class="widget-title">Our address</h3>
-								<strong>Company name INC</strong>
-								<address>592 Avenue Street, Los Angeles, CA 90012</address>
-								<a href="tel:+1 800 931 812">+1 800 931 812</a> <br>
-								<a href="mailto:office@companyname.com">office@companyname.com</a>
-							</div>
-						</div>
-						<div class="col-md-3">
-							<div class="widget">
-								<h3 class="widget-title">Press room</h3>
-								<ul class="arrow-list">
-									<li><a href="#">Accusantium doloremque</a></li> 
-									<li><a href="#">Laudantium totam aperiam</a></li>
-									<li><a href="#">Eaque ipsa quae illo inventore</a></li> 
-									<li><a href="#">Veritatis et quasi architecto</a></li>
-									<li><a href="#">Vitae dicta sunt explicabo</a></li>
-								</ul>
-							</div>
-						</div>
-						<div class="col-md-3">
-							<div class="widget">
-								<h3 class="widget-title">Research summary</h3>
-								<ul class="arrow-list">
-									<li><a href="#">Accusantium doloremque</a></li> 
-									<li><a href="#">Laudantium totam aperiam</a></li>
-									<li><a href="#">Eaque ipsa quae illo inventore</a></li> 
-									<li><a href="#">Veritatis et quasi architecto</a></li>
-									<li><a href="#">Vitae dicta sunt explicabo</a></li>
-								</ul>
-							</div>
-						</div>
-						<div class="col-md-3">
-							<div class="widget">
-								<h3 class="widget-title">Social media</h3>
-								<p>Deserunt mollitia animi id est laborum dolorum fuga harum quidem rerum facilis.</p>
-								<div class="social-links">
-									<a href="#"><i class="fa fa-facebook"></i></a>
-									<a href="#"><i class="fa fa-twitter"></i></a>
-									<a href="#"><i class="fa fa-google-plus"></i></a>
-									<a href="#"><i class="fa fa-pinterest"></i></a>
-								</div>
-							</div>
-						</div>
-					</div> <!-- .row -->
+	<div class="site-content">
+		{% block navbar %}
+		Navbar Here!
+		{% endblock navbar %}
 
-					<p class="colophon">copyright 2014 Company name. Designed by <a href="http://www.vandelaydesign.com/" title="Designed by VandelayDesign.com" target="_blank">VandelayDesign.com</a>. All rights reserved</p>
-				</div> <!-- .container -->
-			</footer>
+		{% block content %}
+
+		<main class="main-content">
+			<p>Use this document as a way to quick start any new project.</p>
+		</main> <!-- .main-content -->
+		{% endblock content %}
+		<div class="fullwidth-block" data-bg-color="#edf2f4">
+			<div class="container">
+				<div class="subscribe-form">
+					<h2>Join our newsletter</h2>
+					<form action="#">
+						<input type="text" placeholder="Enter your email">
+						<input type="submit" value="Subscribe">
+					</form>
+				</div>
+			</div>
 		</div>
 
+		<footer class="site-footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3">
+						<div class="widget">
+							<h3 class="widget-title">Our address</h3>
+							<strong>Company name INC</strong>
+							<address>592 Avenue Street, Los Angeles, CA 90012</address>
+							<a href="tel:+1 800 931 812">+1 800 931 812</a> <br>
+							<a href="mailto:office@companyname.com">office@companyname.com</a>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="widget">
+							<h3 class="widget-title">Press room</h3>
+							<ul class="arrow-list">
+								<li><a href="#">Accusantium doloremque</a></li>
+								<li><a href="#">Laudantium totam aperiam</a></li>
+								<li><a href="#">Eaque ipsa quae illo inventore</a></li>
+								<li><a href="#">Veritatis et quasi architecto</a></li>
+								<li><a href="#">Vitae dicta sunt explicabo</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="widget">
+							<h3 class="widget-title">Research summary</h3>
+							<ul class="arrow-list">
+								<li><a href="#">Accusantium doloremque</a></li>
+								<li><a href="#">Laudantium totam aperiam</a></li>
+								<li><a href="#">Eaque ipsa quae illo inventore</a></li>
+								<li><a href="#">Veritatis et quasi architecto</a></li>
+								<li><a href="#">Vitae dicta sunt explicabo</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="widget">
+							<h3 class="widget-title">Social media</h3>
+							<p>Deserunt mollitia animi id est laborum dolorum fuga harum quidem rerum facilis.</p>
+							<div class="social-links">
+								<a href="#"><i class="fa fa-facebook"></i></a>
+								<a href="#"><i class="fa fa-twitter"></i></a>
+								<a href="#"><i class="fa fa-google-plus"></i></a>
+								<a href="#"><i class="fa fa-pinterest"></i></a>
+							</div>
+						</div>
+					</div>
+				</div> <!-- .row -->
 
-		{% block modal %}{% endblock modal %}
+				<p class="colophon">copyright 2014 Company name. Designed by <a href="http://www.vandelaydesign.com/"
+						title="Designed by VandelayDesign.com" target="_blank">VandelayDesign.com</a>. All rights
+					reserved</p>
+			</div> <!-- .container -->
+		</footer>
+	</div>
 
-		<!-- Le javascript
+	{% block modal %}{% endblock modal %}
+
+	<!-- Le javascript
 		================================================== -->
-		<!-- Placed at the end of the document so the pages load faster -->
-		{% block javascript %}
-		  
-		 
-	
-		  <!-- Your stuff: Third-party javascript libraries go here -->
-		  
-	
-		  <!-- place project specific Javascript in this file -->
-		  {% compress js %}
-		  <script src="{% static 'js/jquery-1.11.1.min.js' %}"></script>
-		  <script src="{% static 'js/plugins.js' %}"></script>
-		  <script src="{% static 'js/app.js' %}"></script>
-		  {% endcompress %}
-	
-		{% endblock javascript %}
-		
-	</body>
+	<!-- Placed at the end of the document so the pages load faster -->
+	{% block javascript %}
+
+
+
+	<!-- Your stuff: Third-party javascript libraries go here -->
+
+
+	<!-- place project specific Javascript in this file -->
+	{% compress js %}
+	<script src="{% static 'js/jquery-1.11.1.min.js' %}"></script>
+	<script src="{% static 'js/plugins.js' %}"></script>
+	<script src="{% static 'js/app.js' %}"></script>
+	{% endcompress %}
+
+	{% endblock javascript %}
+
+</body>
 
 </html>

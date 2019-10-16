@@ -17,6 +17,9 @@ urlpatterns = [
         "projects/", TemplateView.as_view(template_name="pages/projects.html"), name="projects"
     ),
     path(
+        "project_detail/", TemplateView.as_view(template_name="pages/project_detail.html"), name="project_detail"
+    ),
+    path(
         "services/", TemplateView.as_view(template_name="pages/services.html"), name="services"
     ),
 
