@@ -6,10 +6,23 @@ from django.views.generic import TemplateView
 from django.views import defaults as default_views
 
 urlpatterns = [
-    path("", TemplateView.as_view(template_name="pages/home.html"), name="home"),
+    path("", TemplateView.as_view(template_name="pages/home/index.html"), name="home"),
     path(
-        "about/", TemplateView.as_view(template_name="pages/about.html"), name="about"
+        "about/", TemplateView.as_view(template_name="pages/about/index.html"), name="about"
     ),
+    path(
+        "contact/", TemplateView.as_view(template_name="pages/contact/index.html"), name="contact"
+    ),
+    path(
+        "projects/", TemplateView.as_view(template_name="pages/project/projects.html"), name="projects"
+    ),
+    path(
+        "project_detail/", TemplateView.as_view(template_name="pages/project/project_detail.html"), name="project_detail"
+    ),
+    path(
+        "services/", TemplateView.as_view(template_name="pages/services/index.html"), name="services"
+    ),
+
     # Django Admin, use {% url 'admin:index' %}
     path(settings.ADMIN_URL, admin.site.urls),
     # User management

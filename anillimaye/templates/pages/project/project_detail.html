@@ -1,0 +1,65 @@
+{% extends "pages/base_nav_2.html" %}{% load static %}
+{% block title %}Project Detail{% endblock title %}
+{% block pageTitle %}
+Project Detail
+{% endblock pageTitle %}
+{% block pageSubtitle %}
+
+{% endblock pageSubtitle %}
+{% block content %}
+<main class="main-content">
+	<div class="fullwidth-block">
+		<div class="container">
+			<a href="{% url 'projects' %}" class="button back"><img src="{% static 'images/arrow-back.png' %}"
+					alt="">Back to projects</a>
+			<div class="row">
+				<div class="col-md-6">
+					<figure>
+						<img src="{% static 'images/figure.jpg' %}" alt="">
+					</figure>
+				</div>
+				<div class="col-md-6">
+					<h2 class="section-title">Suscipit laboriosam aliquid commodi</h2>
+					<ul class="project-info">
+						<li><strong>Date:</strong> 06/10/14</li>
+						<li><strong>Client:</strong> Lorem ipsum</li>
+						<li><strong>Manager:</strong> Howard Brown</li>
+						<li><strong>Team:</strong> Jessica Smith, Tom Fisher, Sarah Branson, Ted Marks</li>
+						<li><strong>Goal:</strong> Neque porro quisquam est qui dolorem ipsum quia dolor sit amet</li>
+						<li><strong>Info:</strong> Veniam, quis nostrud exercitation ullamco laboris nisi </li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-6">
+					<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+						totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
+						dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
+						fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque
+						porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia
+						non.</p>
+
+					<p>incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis
+						nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi
+						consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil
+						molestiae consequatur, vel illum dolorem.</p>
+				</div>
+				<div class="col-md-6">
+					<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+						totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
+						dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
+						fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque
+						porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia
+						non.</p>
+
+					<p>incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis
+						nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi
+						consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil
+						molestiae consequatur, vel illum dolorem.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	{% endblock content %}
