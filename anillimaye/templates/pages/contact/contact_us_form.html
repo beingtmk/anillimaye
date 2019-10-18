@@ -34,15 +34,16 @@
 			</div>
 
 			<div class="row contact-form">
-				<form action="#">
+				<form action={% url 'users:contact' %} method="POST">
+					{% csrf_token %}
 					<div class="col-md-4">
-						<p><input type="text" placeholder="Your name..."></p>
-						<p><input type="text" placeholder="Email..."></p>
-						<p><input type="text" placeholder="Website..."></p>
+						<p><input name="name" type="text" placeholder="Your name..."></p>
+						<p><input name="email" type="text" placeholder="Email..."></p>
+						<p><input name="website" type="text" placeholder="Website..."></p>
 					</div>
 					<div class="col-md-8">
 						<p>
-							<textarea name="" placeholder="Message"></textarea>
+							<textarea name="message" placeholder="Message"></textarea>
 						</p>
 						<p class="text-right">
 							<input type="submit" value="Send message">

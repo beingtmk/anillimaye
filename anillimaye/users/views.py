@@ -4,6 +4,7 @@ from django.urls import reverse
 from django.views.generic import DetailView, RedirectView, UpdateView
 from django.contrib import messages
 from django.utils.translation import ugettext_lazy as _
+from anillimaye.users.models import Newsletter, Contact
 
 User = get_user_model()
 
@@ -48,3 +49,28 @@ class UserRedirectView(LoginRequiredMixin, RedirectView):
 
 
 user_redirect_view = UserRedirectView.as_view()
+
+
+def news_letter(request):
+    if request.POST:
+        print(request.POST)
+        obj = request.POST
+        news_letter_obj = Newsletter.objects.create(email=obj["email"])
+        print(news_letter_obj)
+
+        # message = ("Successfully Saved you Query!")
+        # messages.add_message(request, messages.INFO, message)
+
+    return redirect('home')
+
+def contact(request):
+    if request.POST:
+        print(request.POST)
+        obj = request.POST
+        contact_obj = Contact.objects.create(email=obj["email"], name=obj["name"], website=obj["website"], message=obj["message"])
+        print(contact_obj)
+
+        # message = ("Successfully Saved you Query!")
+        # messages.add_message(request, messages.INFO, message)
+
+    return redirect('home')

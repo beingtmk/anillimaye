@@ -4,8 +4,9 @@
 			<div class="container">
 				<div class="subscribe-form">
 					<h2>Join my newsletter</h2>
-					<form action="#">
-						<input type="text" placeholder="Enter your email here!">
+					<form action={% url 'users:news_letter' %} method="POST">
+						{% csrf_token %}
+						<input name="email" type="text" placeholder="Enter your email here!">
 						<input type="submit" value="Subscribe">
 					</form>
 				</div>
