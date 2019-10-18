@@ -2,31 +2,7 @@
 {% block title %}anillimaye{% endblock title %}
 {% block navbar %}
 <header class="site-header collapsed-nav" data-bg-image="">
-	<div class="container">
-		<div class="header-bar">
-			<a href="{% url 'home' %}" class="branding">
-				<img src="{% static 'images/logo.png' %}" alt="" class="logo">
-				<div class="logo-type">
-					<h1 class="site-title">Company name</h1>
-					<small class="site-description">Tagline goes here</small>
-				</div>
-			</a>
-
-			<nav class="main-navigation">
-				<button class="menu-toggle"><i class="fa fa-bars"></i></button>
-				<ul class="menu">
-					<li class="home menu-item current-menu-item"><a href="{% url 'home' %}"><img
-								src="{% static 'images/home-icon.png' %}" alt="Home"></a></li>
-					<li class="menu-item"><a href="{% url 'about' %}">About</a></li>
-					<li class="menu-item"><a href="{% url 'services' %}">Services</a></li>
-					<li class="menu-item"><a href="{% url 'projects' %}">Our projects</a></li>
-					<li class="menu-item"><a href="{% url 'contact' %}">Contact</a></li>
-				</ul>
-			</nav>
-
-			<div class="mobile-navigation"></div>
-		</div>
-	</div>
+	{% include 'pages/common_nav.html' %}
 </header>
 
 
@@ -35,14 +11,31 @@
 		<li data-bg-image="{% static 'images/slider-1.jpg' %}">
 			<div class="container">
 				<div class="slide-content">
-					<h2 class="slide-title">LaboreLabore et dolore magna</h2>
-					<p>Enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi aliquip ex ea commodo
-						consequat duis aute irure dolor in reprehenderit.</p>
-					<a href="#" class="button">See details</a>
+					<h2 class="slide-title">Anil Mukund Limaye</h2>
+					<p>Biologist | Teacher</p>
+					{% comment %} <a href="#" class="button">See details</a> {% endcomment %}
 				</div>
 			</div>
 		</li>
 		<li data-bg-image="{% static 'images/slider-2.jpg' %}">
+			<div class="container">
+				<div class="slide-content">
+					<h2 class="slide-title">Anil Mukund Limaye</h2>
+					<p>Biologist | Teacher</p>
+					{% comment %} <a href="#" class="button">See details</a> {% endcomment %}
+				</div>
+			</div>
+		</li>
+		<li data-bg-image="{% static 'images/slider-3.jpg' %}">
+			<div class="container">
+				<div class="slide-content">
+					<h2 class="slide-title">Anil Mukund Limaye</h2>
+					<p>Biologist | Teacher</p>
+					{% comment %} <a href="#" class="button">See details</a> {% endcomment %}
+				</div>
+			</div>
+		</li>
+		{% comment %} <li data-bg-image="{% static 'images/slider-2.jpg' %}">
 			<div class="container">
 				<div class="slide-content">
 					<h2 class="slide-title">LaboreLabore et dolore magna</h2>
@@ -61,7 +54,7 @@
 					<a href="#" class="button">See details</a>
 				</div>
 			</div>
-		</li>
+		</li> {% endcomment %}
 	</ul>
 </div>
 {% endblock navbar %}

@@ -46,9 +46,9 @@
 
 		{% block content %}
 
-		<main class="main-content">
-			<p>Use this document as a way to quick start any new project.</p>
-		</main> <!-- .main-content -->
+			<main class="main-content">
+				<p>Use this document as a way to quick start any new project.</p>
+			</main> <!-- .main-content -->
 		{% endblock content %}
 		{% include 'common/newsletter.html' %}
 
@@ -71,9 +71,9 @@
 
 	<!-- place project specific Javascript in this file -->
 	{% compress js %}
-	<script src="{% static 'js/jquery-1.11.1.min.js' %}"></script>
-	<script src="{% static 'js/plugins.js' %}"></script>
-	<script src="{% static 'js/app.js' %}"></script>
+		<script src="{% static 'js/jquery-1.11.1.min.js' %}"></script>
+		<script src="{% static 'js/plugins.js' %}"></script>
+		<script src="{% static 'js/app.js' %}"></script>
 	{% endcompress %}
 
 	{% endblock javascript %}
