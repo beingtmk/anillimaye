@@ -1,17 +1,27 @@
-{% extends "base.html" %}
+{% extends "common/base_nav_2.html" %}
 {% load crispy_forms_tags %}
 
 {% block title %}{{ user.username }}{% endblock %}
 
+{% block pageTitle %}
+  Edit Profile
+{% endblock pageTitle %}
+
+{% block pageSubtitle %}
+  Lab Members can edit their profile here!
+{% endblock pageSubtitle %}
+
 {% block content %}
-  <h1>{{ user.username }}</h1>
-  <form class="form-horizontal" method="post" action="{% url 'users:update' %}">
-    {% csrf_token %}
-    {{ form|crispy }}
-    <div class="control-group">
-      <div class="controls">
-        <button type="submit" class="btn">Update</button>
+  <div align="center">  
+    <h1>{{ user.username }}</h1>
+    <form class="form-horizontal" method="post" action="{% url 'users:update' %}">
+      {% csrf_token %}
+      {{ form|crispy }}
+      <div class="control-group">
+        <div class="controls">
+          <button type="submit" class="btn">Update</button>
+        </div>
       </div>
-    </div>
-  </form>
+    </form>
+  </div>
 {% endblock %}

@@ -1,10 +1,18 @@
-{% extends "base.html" %}
+{% extends "common/base_nav_2.html" %}
 {% load static %}
 
 {% block title %}User: {{ object.username }}{% endblock %}
 
+{% block pageTitle %}
+  Profile
+{% endblock pageTitle %}
+
+{% block pageSubtitle %}
+  Lab Members can view there profile here!
+{% endblock pageSubtitle %}
+
 {% block content %}
-<div class="container">
+<div class="container" style="min-height: 40vh!important;">
 
   <div class="row">
     <div class="col-sm-12">
