@@ -1398,7 +1398,7 @@ form input[type="submit"], form button, form input[type="reset"] {
     margin-top: 30px;
     width: 22px;
     height: 11px;
-    background: url(images/arrow-long.png); }
+    background: url(../images/arrow-long.png); }
 
 .cta {
   text-align: center;
@@ -1538,7 +1538,7 @@ ol.circle {
       content: " ";
       width: 21px;
       height: 18px;
-      background: url(images/quote.png) no-repeat;
+      background: url(../images/quote.png) no-repeat;
       display: block;
       position: absolute;
       top: 0;
@@ -1692,7 +1692,7 @@ figure {
 
 .arrow-list {
   list-style: none;
-  list-style-image: url(images/arrow.png);
+  list-style-image: url(../images/arrow.png);
   margin-left: 20px;
   margin-bottom: 30px; }
   .arrow-list li {
