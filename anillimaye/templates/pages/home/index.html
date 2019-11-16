@@ -1,12 +1,12 @@
-{% extends "pages/base_nav_1.html" %}{% load static %}
+{% extends "common/base_nav_1.html" %}{% load static %}
 {% block title %}anillimaye{% endblock title %}
 {% block content %}
 {% include 'pages/home/hot_topics.html' %}
 
 
-{% comment %} {% include 'pages/home/latest_news.html' %} {% endcomment %}
-{% comment %} {% include 'pages/home/mission.html' %} {% endcomment %}
-{% comment %} {% include 'pages/home/home_footer_head.html' %} {% endcomment %}
+{% comment %} {% include 'pages/home/latest_news.html' %}
+{% include 'pages/home/mission.html' %}
+{% include 'pages/home/home_footer_head.html' %} {% endcomment %}
 
 
 

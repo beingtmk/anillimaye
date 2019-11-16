@@ -1,9 +1,17 @@
-{% extends "base.html" %}
+{% extends "common/base_nav_2.html" %}
 {% block title %}{% block head_title %}{% endblock head_title %}{% endblock title %}
 
+{% block pageTitle %}
+  Sign Up
+{% endblock pageTitle %}
+
+{% block pageSubtitle %}
+  Lab Members can register here!
+{% endblock pageSubtitle %}
+
 {% block content %}
-<div class="row">
-  <div class="col-md-6 offset-md-3">
+<div class="row" align="center" style="margin: 1%;">
+  <div class="col-md-12">
     {% block inner %}{% endblock %}
   </div>
 </div>
