@@ -1,0 +1,7 @@
+# PostgreSQL
+# ------------------------------------------------------------------------------
+POSTGRES_HOST=anillimaye.cgzzlrzeeeaa.ap-south-1.rds.amazonaws.com
+POSTGRES_PORT=5432
+POSTGRES_DB=anillimaye
+POSTGRES_USER=anillimaye
+POSTGRES_PASSWORD=anillimayedb

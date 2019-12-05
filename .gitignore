@@ -275,5 +275,3 @@ anillimaye/media/
 
 .ipython/
 .env
-.envs/*
-!.envs/.local/
